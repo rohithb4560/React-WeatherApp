@@ -4,8 +4,18 @@ p {
 }
 body {
   background-image: url('https://wallpaperaccess.com/full/1540031.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
 }

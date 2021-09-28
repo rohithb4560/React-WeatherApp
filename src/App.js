@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 
 export default function App() {
-  const [city, setCity] = useState('London');
+  const [city, setCity] = useState('');
   const [results, setResults] = useState([]);
   const [country, setCountry] = useState('');
-  const [temp, setTemp] = useState();
+  const [temp, setTemp] = useState('');
   const [description, setDescription] = useState();
   const [search, setSearch] = useState('');
 
@@ -49,13 +49,13 @@ export default function App() {
     >
       <form onSubmit={getSearch}>
         <input
-          style={{ marginTop: '10px' ,fontSize:'24px'}}
+          style={{ marginTop: '10px',width:'90%' }}
           type="text"
           onChange={handleChange}
           value={search}
         />
 
-        <button style={{fontSize:'24px'}}>Search</button>
+        <button>Search</button>
       </form>
       <h3>Name: {city}</h3>
       <h3>Country: {country}</h3>
